@@ -28,6 +28,8 @@ myDict[firstStringReverse] = firstStringVowels
 myDict[secondStringReverse] = secondStringVowels
 myDict[thirdStringReverse] = thirdStringVowels
 
-sorted_dict = dict(sorted(myDict.items()))
+sorted_dict = {}
+for w in sorted(myDict,key=myDict.get,reverse=True):
+    sorted_dict[w] = myDict[w]
 
 print(sorted_dict)
